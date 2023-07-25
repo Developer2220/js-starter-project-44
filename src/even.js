@@ -14,7 +14,7 @@ const evenGame = () => {
       if (userAnswer === 'yes') {
         console.log('Correct!');
       } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. /n Let's try again, ${name}!`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. \n Let's try again, ${name}!`);
         return;
       }
     }
@@ -22,7 +22,7 @@ const evenGame = () => {
       if (userAnswer === 'no') {
         console.log('Correct!');
       } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. /n Let's try again, ${name}!`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. \n Let's try again, ${name}!`);
         return;
       }
     }
