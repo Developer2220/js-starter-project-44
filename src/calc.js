@@ -17,9 +17,29 @@ const calcGame = () => {
     const secondNumber = getRandomSecondNumber();
     const operation = getRandomOperation();
     console.log(`Question: ${fistNumber} ${operation} ${secondNumber}`);
-    const number = (eval(fistNumber + operation + secondNumber));
+    const doMath = () => {
+      let math = 0;
+      switch (operation) {
+        case '+':
+          math = fistNumber + secondNumber;
+          break;
+
+        case '-':
+          math = fistNumber - secondNumber;
+          break;
+
+        case '*':
+          math = fistNumber * secondNumber;
+          break;
+
+        default:
+          throw new Error(`Unknown order state: '${operation}'!`);
+      }
+      return math;
+    };
+    const number = doMath(fistNumber, operation, secondNumber);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (number === userAnswer) {
+    if (Number(number) === Number(userAnswer)) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was ${number}. \n Let's try again, ${name}!`);
