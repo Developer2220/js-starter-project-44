@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
+import engine from '../index.js';
 
 const calcGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
   const getRandomFistNumber = () => Math.floor(Math.random() * 100);
   const getRandomSecondNumber = () => Math.floor(Math.random() * 100);
@@ -46,7 +44,6 @@ const calcGame = () => {
       return;
     }
   }
-  console.log(`Congratulations, ${name}!`);
 };
 
 export default calcGame;
