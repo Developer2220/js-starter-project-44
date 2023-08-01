@@ -1,49 +1,47 @@
-import readlineSync from 'readline-sync';
-import engine from '../index.js';
+const gameRules = 'What is the result of the expression?';
 
-const calcGame = () => {
-  console.log('What is the result of the expression?');
-  const getRandomFistNumber = () => Math.floor(Math.random() * 100);
-  const getRandomSecondNumber = () => Math.floor(Math.random() * 100);
-  const operations = ['-', '+', '*'];
-  const getRandomOperation = () => {
-    const randomOperation = Math.floor(Math.random() * (operations.length));
-    return operations[randomOperation];
-  };
-  for (let i = 1; i <= 3; i += 1) {
-    const fistNumber = getRandomFistNumber();
-    const secondNumber = getRandomSecondNumber();
-    const operation = getRandomOperation();
-    console.log(`Question: ${fistNumber} ${operation} ${secondNumber}`);
-    const doMath = () => {
-      let math = 0;
-      switch (operation) {
-        case '+':
-          math = fistNumber + secondNumber;
-          break;
+const operations = ['-', '+', '*'];
 
-        case '-':
-          math = fistNumber - secondNumber;
-          break;
+const doMath = (a, b, operator) => {
+  let math = 0;
+  switch (operator) {
+    case '+':
+      math = a + b;
+      break;
 
-        case '*':
-          math = fistNumber * secondNumber;
-          break;
+    case '-':
+      math = a - b;
+      break;
 
-        default:
-          throw new Error(`Unknown order state: '${operation}'!`);
-      }
-      return math;
-    };
-    const number = doMath(fistNumber, operation, secondNumber);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (Number(number) === Number(userAnswer)) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was ${number}. \n Let's try again, ${name}!`);
-      return;
-    }
+    case '*':
+      math = a * b;
+      break;
+
+    default:
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
+  return math;
 };
 
-export default calcGame;
+const getQuestionAndCorrectAnswer = () => {
+  const getRandomNumberFist = () => Math.floor(Math.random() * 100);
+  const getRandomNumberSecond = () => Math.floor(Math.random() * 100);
+  const getRandomOperation = () => {
+    const randomOperation = Math.floor(Math.random() * operations.length);
+    return operations[randomOperation];
+  };
+  const randomNumberFist = getRandomNumberFist();
+  const randomNumberSecond = getRandomNumberSecond();
+  const operation = getRandomOperation();
+
+  const getCorrectAnswer = doMath(
+    randomNumberFist,
+    randomNumberSecond,
+    operation,
+  ).toString();
+  const question = `${randomNumberFist} ${operation} ${randomNumberSecond}`;
+
+  return [question, getCorrectAnswer];
+};
+
+export { gameRules, getQuestionAndCorrectAnswer };

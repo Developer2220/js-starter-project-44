@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import calcGame from '../src/games/calc.js';
+import { gameRules, getQuestionAndCorrectAnswer } from '../src/games/calc.js';
+import startGame from '../src/index.js';
 
-calcGame();
+startGame(gameRules, getQuestionAndCorrectAnswer);
