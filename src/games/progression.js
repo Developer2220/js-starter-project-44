@@ -7,7 +7,7 @@ const getQuestionAndProgressionAnswer = () => {
     let x = getRandomNumberFirst();
     const y = getRandomNumberDifference();
     const arr = [];
-    for (let i = 0; i <= 10; i += i) {
+    for (let i = 0; i <= 10; i += 1) {
       x += y;
       arr.push(x);
     }
@@ -21,10 +21,10 @@ const getQuestionAndProgressionAnswer = () => {
     return num[rand];
   };
 
-  const getCorrectAnswer = getRandomNumberOfProgression(massiv);
+  const getCorrectAnswer = String(getRandomNumberOfProgression(massiv));
 
   for (let i = 0; i < massiv.length; i += 1) {
-    if (massiv[i] === getCorrectAnswer) {
+    if (String(massiv[i]) === getCorrectAnswer) {
       massiv[i] = '..';
     }
   }
