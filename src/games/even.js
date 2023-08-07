@@ -3,7 +3,7 @@ const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const evenGame = () => {
   const getRandomNumber = () => Math.floor(Math.random() * 100);
   const question = getRandomNumber();
-  const CorrectAnswer = (x) => {
+  const correctAnswer = (x) => {
     let result;
     if (x % 2 === 0) {
       result = 'yes';
@@ -12,7 +12,7 @@ const evenGame = () => {
     }
     return result;
   };
-  const getCorrectAnswer = CorrectAnswer();
+  const getCorrectAnswer = correctAnswer();
   return [question, getCorrectAnswer];
 };
 
