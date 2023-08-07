@@ -16,8 +16,10 @@ Install games
 
 3. Run the command: npm link
 
-
-Review brain-even
+Brain-even
+Run game: brain-even 
+Review 
+<script async id="asciicast-fw6mhvvkMmFwbdaB5iiM9xBcS" src="https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS.js"></script>
 https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
 
 Review brain-calc
