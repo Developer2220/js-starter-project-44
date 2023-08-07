@@ -18,9 +18,8 @@ Install games
 
 Brain-even
 Run game: brain-even 
-Review 
-<script async id="asciicast-fw6mhvvkMmFwbdaB5iiM9xBcS" src="https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS.js"></script>
-https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
+Review https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
 
-Review brain-calc
-https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9
+Brain-calc
+Run game: brain-calc
+Review https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9

@@ -9,9 +9,9 @@ const getQuestionAndNodAnswer = () => {
   const nod = (a, b) => {
     while ((a !== 0) && (b !== 0)) {
       if (a > b) {
-        a = a % b;
+        a %= b;
       } else {
-        b = b % a;
+        b %= a;
       }
     }
     return a + b;
