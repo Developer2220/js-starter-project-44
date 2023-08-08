@@ -16,7 +16,7 @@ const getQuestionAndPrimeAnswer = () => {
     }
     return 'yes';
   };
-  const getCorrectAnswer = isPrime();
+  const getCorrectAnswer = isPrime(question);
   return [question, getCorrectAnswer];
 };
 

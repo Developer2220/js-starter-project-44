@@ -21,7 +21,6 @@ const getQuestionAndProgressionAnswer = () => {
     return num[rand];
   };
 
-
   const randomNumber = getRandomNumberOfProgression(massiv);
 
   const j = massiv.indexOf(randomNumber);
