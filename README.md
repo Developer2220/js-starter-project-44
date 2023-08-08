@@ -30,11 +30,11 @@ Review https://asciinema.org/a/SfblyrNkqpfUbR4qr2fa4RSS1
 
 **Brain-prime**
 Run game: brain-prime
-Review https://asciinema.org/~ezhDev
+Review 
 
 **Brain-progression**
 Run game: brain-progression
-Review 
+Review https://asciinema.org/a/lAdrF30pFzsX1LE6eB65PQBiJ
 
 
 
