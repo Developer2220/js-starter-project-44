@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const getQuestionAndNodAnswer = () => {
