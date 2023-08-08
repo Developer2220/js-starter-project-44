@@ -24,4 +24,17 @@ Review https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS
 Run game: brain-calc
 Review https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9
 
+**Brain-gcd**
+Run game: brain-gcd
+Review <script async id="asciicast-SfblyrNkqpfUbR4qr2fa4RSS1" src="https://asciinema.org/a/SfblyrNkqpfUbR4qr2fa4RSS1.js"></script>
+
+**Brain-prime**
+Run game: brain-prime
+Review 
+
+**Brain-progression**
+Run game: brain-progression
+Review 
+
+
 
