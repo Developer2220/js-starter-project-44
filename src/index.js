@@ -12,10 +12,10 @@ const startGame = (gameRules, getRoundData) => {
     const [question, getCorrectAnswer] = getRoundData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (getCorrectAnswer === userAnswer) {
+    if (userAnswer === getCorrectAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was ${getCorrectAnswer}. \n Let's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getCorrectAnswer}'. \n Let's try again, ${userName}!`);
       return;
     }
   }
