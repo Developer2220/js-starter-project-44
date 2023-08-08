@@ -8,7 +8,7 @@ Brain games
 
 These are 5 logical thinking games. Each game asks questions that need to be answered correctly. After three correct answers, the game is over. Wrong answers end the game and are asked to play again.
 
-Install games
+**Install games**
 
 1. Clone this repository
 
@@ -16,11 +16,12 @@ Install games
 
 3. Run the command: npm link
 
-Brain-even
+**Brain-even**
 Run game: brain-even 
 Review https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
-<script async id="asciicast-hK6MiOlu6FxLfSRWp2NnGluc9" src="https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9.js"></script>
 
-Brain-calc
+**Brain-calc**
 Run game: brain-calc
 Review https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9
+
+
