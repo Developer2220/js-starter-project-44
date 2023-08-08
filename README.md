@@ -34,7 +34,8 @@ Review
 
 **Brain-progression**
 Run game: brain-progression
-Review https://asciinema.org/a/lAdrF30pFzsX1LE6eB65PQBiJ
+Review
+[![asciicast](https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9.svg)](https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9)
 
 
 
