@@ -21,15 +21,18 @@ const getQuestionAndProgressionAnswer = () => {
     return num[rand];
   };
 
-  const getCorrectAnswer = String(getRandomNumberOfProgression(massiv));
 
-  for (let i = 0; i < massiv.length; i += 1) {
-    if (String(massiv[i]) === getCorrectAnswer) {
-      massiv[i] = '..';
-    }
+  const randomNumber = getRandomNumberOfProgression(massiv);
+
+  const j = massiv.indexOf(randomNumber);
+  if (j !== -1) {
+    massiv.splice(j, 1, '..');
   }
+
   const doString = String(massiv);
   const question = doString.replace(/[,]/g, ' ');
+
+  const getCorrectAnswer = String(randomNumber);
 
   return [question, getCorrectAnswer];
 };
