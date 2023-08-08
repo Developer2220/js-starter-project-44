@@ -26,11 +26,11 @@ Review https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9
 
 **Brain-gcd**
 Run game: brain-gcd
-Review <script async id="asciicast-SfblyrNkqpfUbR4qr2fa4RSS1" src="https://asciinema.org/a/SfblyrNkqpfUbR4qr2fa4RSS1.js"></script>
+Review https://asciinema.org/a/SfblyrNkqpfUbR4qr2fa4RSS1
 
 **Brain-prime**
 Run game: brain-prime
-Review 
+Review https://asciinema.org/~ezhDev
 
 **Brain-progression**
 Run game: brain-progression
