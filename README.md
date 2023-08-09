@@ -20,7 +20,9 @@ These are 5 logical thinking games. Each game asks questions that need to be ans
 
 Run game: brain-even 
 
-Review https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
+Review 
+
+[![asciicast](https://asciinema.org/a/3Wot11ubMaj0dlGHwZwHUOVXN.svg)](https://asciinema.org/a/3Wot11ubMaj0dlGHwZwHUOVXN)
 
 **Brain-calc**
 Run game: brain-calc
