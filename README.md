@@ -17,7 +17,9 @@ These are 5 logical thinking games. Each game asks questions that need to be ans
 3. Run the command: npm link
 
 **Brain-even**
+
 Run game: brain-even 
+
 Review https://asciinema.org/a/fw6mhvvkMmFwbdaB5iiM9xBcS 
 
 **Brain-calc**
