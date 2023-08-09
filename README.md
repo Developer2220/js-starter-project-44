@@ -33,14 +33,27 @@ Review
 [![asciicast](https://asciinema.org/a/bCroYLM5yJVcgXTiEXF4WPRLF.svg)](https://asciinema.org/a/bCroYLM5yJVcgXTiEXF4WPRLF)
 
 **Brain-gcd**
-Run game: brain-gcd
-Review https://asciinema.org/a/SfblyrNkqpfUbR4qr2fa4RSS1
 
-**Brain-prime**
-Run game: brain-prime
+Run game: brain-gcd
+
 Review 
 
+[![asciicast](https://asciinema.org/a/5Kx6y0kGlQyz7ki6IIUJl5PZh.svg)](https://asciinema.org/a/5Kx6y0kGlQyz7ki6IIUJl5PZh)
+
+**Brain-prime**
+
+Run game: brain-prime
+
+Review 
+
+[![asciicast](https://asciinema.org/a/iVimgacQMHtJ2jsjmMhwnwPLG.svg)](https://asciinema.org/a/iVimgacQMHtJ2jsjmMhwnwPLG)
+
 **Brain-progression**
+
 Run game: brain-progression
+
 Review
-[![asciicast](https://asciinema.org/a/lAdrF30pFzsX1LE6eB65PQBiJ.svg)](https://asciinema.org/a/lAdrF30pFzsX1LE6eB65PQBiJ)
+
+[![asciicast](https://asciinema.org/a/8I4NSdSnkOrpkbzLb7tI1k1d6.svg)](https://asciinema.org/a/8I4NSdSnkOrpkbzLb7tI1k1d6)
+
+
