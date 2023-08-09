@@ -22,7 +22,7 @@ Run game: brain-even
 
 Review 
 
-[![asciicast](https://asciinema.org/a/3Wot11ubMaj0dlGHwZwHUOVXN.svg)](https://asciinema.org/a/3Wot11ubMaj0dlGHwZwHUOVXN)
+[![asciicast](https://asciinema.org/a/W7eEyo7B4uQwOv8euYOwyUryG.svg)](https://asciinema.org/a/W7eEyo7B4uQwOv8euYOwyUryG)
 
 **Brain-calc**
 Run game: brain-calc
