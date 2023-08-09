@@ -4,7 +4,7 @@
 ### CodeClimate maintainability badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/93130a107a9b3d3a5d56/maintainability)](https://codeclimate.com/github/Developer2220/js-starter-project-44/maintainability)
 
-Brain games
+**Brain games**
 
 These are 5 logical thinking games. Each game asks questions that need to be answered correctly. After three correct answers, the game is over. Wrong answers end the game and are asked to play again.
 
@@ -25,8 +25,12 @@ Review
 [![asciicast](https://asciinema.org/a/W7eEyo7B4uQwOv8euYOwyUryG.svg)](https://asciinema.org/a/W7eEyo7B4uQwOv8euYOwyUryG)
 
 **Brain-calc**
+
 Run game: brain-calc
-Review https://asciinema.org/a/hK6MiOlu6FxLfSRWp2NnGluc9
+
+Review 
+
+[![asciicast](https://asciinema.org/a/bCroYLM5yJVcgXTiEXF4WPRLF.svg)](https://asciinema.org/a/bCroYLM5yJVcgXTiEXF4WPRLF)
 
 **Brain-gcd**
 Run game: brain-gcd
