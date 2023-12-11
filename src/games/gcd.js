@@ -1,26 +1,29 @@
-/* eslint-disable no-param-reassign */
+import startGame from '../index.js';
+import getRandomNumber from '../random.js';
+
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-const getQuestionAndNodAnswer = () => {
-  const getRandomNumberFist = () => Math.floor(Math.random() * 100);
-  const getRandomNumberSecond = () => Math.floor(Math.random() * 100);
-  const randomNumberFist = getRandomNumberFist();
-  const randomNumberSecond = getRandomNumberSecond();
-
-  const nod = (a, b) => {
-    while ((a !== 0) && (b !== 0)) {
-      if (a > b) {
-        a %= b;
-      } else {
-        b %= a;
-      }
+const getNod = (a, b) => {
+  let firstNum = a;
+  let secondNum = b;
+  while ((firstNum !== 0) && (secondNum !== 0)) {
+    if (firstNum > secondNum) {
+      firstNum %= secondNum;
+    } else {
+      secondNum %= firstNum;
     }
-    return a + b;
-  };
-  const question = `${randomNumberFist} ${randomNumberSecond}`;
-  const getCorrectAnswer = String(nod(randomNumberFist, randomNumberSecond));
+  }
+  return firstNum + secondNum;
+};
 
+const getQuestionAndNodAnswer = () => {
+  const randomNumberFist = getRandomNumber();
+  const randomNumberSecond = getRandomNumber();
+  const question = `${randomNumberFist} ${randomNumberSecond}`;
+  const getCorrectAnswer = String(getNod(randomNumberFist, randomNumberSecond));
   return [question, getCorrectAnswer];
 };
 
-export { gameRules, getQuestionAndNodAnswer };
+export default () => {
+  startGame(gameRules, getQuestionAndNodAnswer);
+};

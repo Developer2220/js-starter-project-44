@@ -1,34 +1,36 @@
+import startGame from '../index.js';
+import getRandomNumber from '../random.js';
+
 const gameRules = 'What number is missing in the progression?';
 
-const getQuestionAndProgressionAnswer = () => {
-  const getProgression = () => {
-    const getRandomNumberFirst = () => Math.floor(Math.random() * 100);
-    const getRandomNumberDifference = () => Math.floor(Math.random() * 5);
-    let x = getRandomNumberFirst();
-    const y = getRandomNumberDifference();
-    const arr = [];
-    for (let i = 0; i <= 10; i += 1) {
-      x += y;
-      arr.push(x);
-    }
-    return arr;
-  };
+const getProgression = () => {
+  const getRandomNumberDifference = () => Math.floor(Math.random() * 5);
+  let x = getRandomNumber();
+  const y = getRandomNumberDifference();
+  const arr = [];
+  for (let i = 0; i <= 10; i += 1) {
+    x += y;
+    arr.push(x);
+  }
+  return arr;
+};
 
-  const massiv = getProgression();
+const getQuestionAndProgressionAnswer = () => {
+  const numbers = getProgression();
 
   const getRandomNumberOfProgression = (num) => {
     const rand = Math.floor(Math.random() * num.length);
     return num[rand];
   };
 
-  const randomNumber = getRandomNumberOfProgression(massiv);
+  const randomNumber = getRandomNumberOfProgression(numbers);
 
-  const j = massiv.indexOf(randomNumber);
+  const j = numbers.indexOf(randomNumber);
   if (j !== -1) {
-    massiv.splice(j, 1, '..');
+    numbers.splice(j, 1, '..');
   }
 
-  const doString = String(massiv);
+  const doString = String(numbers);
   const question = doString.replace(/[,]/g, ' ');
 
   const getCorrectAnswer = String(randomNumber);
@@ -36,4 +38,6 @@ const getQuestionAndProgressionAnswer = () => {
   return [question, getCorrectAnswer];
 };
 
-export { gameRules, getQuestionAndProgressionAnswer };
+export default () => {
+  startGame(gameRules, getQuestionAndProgressionAnswer);
+};
