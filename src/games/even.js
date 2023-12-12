@@ -3,7 +3,7 @@ import getRandomNumber from '../random.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const correctAnswer = (x) => {
+const getCorrectAnswer = (x) => {
   let result;
   if (x % 2 === 0) {
     result = 'yes';
@@ -15,8 +15,8 @@ const correctAnswer = (x) => {
 
 const evenGame = () => {
   const question = getRandomNumber();
-  const getCorrectAnswer = correctAnswer(question);
-  return [question, getCorrectAnswer];
+  const correctAnswer = getCorrectAnswer(question);
+  return [question, correctAnswer];
 };
 
 export default () => {

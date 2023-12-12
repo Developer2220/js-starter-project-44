@@ -21,11 +21,12 @@ const doMath = (a, b, operator) => {
   }
 };
 
+const getRandomOperation = () => {
+  const randomOperation = Math.floor(Math.random() * operations.length);
+  return operations[randomOperation];
+};
+
 const getQuestionAndCorrectAnswer = () => {
-  const getRandomOperation = () => {
-    const randomOperation = Math.floor(Math.random() * operations.length);
-    return operations[randomOperation];
-  };
   const randomNumberFist = getRandomNumber();
   const randomNumberSecond = getRandomNumber();
   const operation = getRandomOperation();
@@ -36,7 +37,6 @@ const getQuestionAndCorrectAnswer = () => {
     operation,
   ).toString();
   const question = `${randomNumberFist} ${operation} ${randomNumberSecond}`;
-
   return [question, getCorrectAnswer];
 };
 
